@@ -23,8 +23,6 @@
             .newuser__header--right__progress-b
 
   .newuser__body
-    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-      = render "devise/shared/error_messages", resource: resource
     .newuser__body__content
       %h2.newuser__body__content__head 会員情報入力
       .newuser__body__content__form
