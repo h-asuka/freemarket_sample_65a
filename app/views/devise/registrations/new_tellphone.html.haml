@@ -21,19 +21,12 @@
           %li.newuser__header--right__list
             %p 完了
             .newuser__header--right__progress-b
-
   .phone-main-content
     .phone-main-content__title
       電話番号の確認
     .phone-main-content__body
       .phone-main-content__body__text-box
         = form_for @number, url: tellphone_path,method: :post do |f|
-          - if @number.errors.any?
-            .chat-group-form__errors
-              %h2= "#{@number.errors.full_messages.count}件のエラーが発生しました。"
-              %ul
-                - @number.errors.full_messages.each do |message|
-                  %li= message
           .phone-text-top
             携帯電話の番号
           = f.text_field :tell,class:'phone-main-content__body__text-box--boxing',placeholder: '携帯電話の番号を入力' 

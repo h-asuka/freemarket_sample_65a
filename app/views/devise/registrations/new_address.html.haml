@@ -28,12 +28,6 @@
         %h2.profile__right__content__head お届け先住所入力
         .profile__right__content__form
           = form_for @address do |f|
-            - if @address.errors.any?
-              .chat-group-form__errors
-                %h2= "#{@address.errors.full_messages.count}件のエラーが発生しました。"
-                %ul
-                  - @address.errors.full_messages.each do |message|
-                    %li= message
             .delibver__right__content__group
               %ul.delibver__right__content__group__top.flex
                 %li.delibver__right__content__group__name お名前
@@ -78,7 +72,7 @@
             .delibver__right__content__group
               %ul.delibver__right__content__group__top.flex
                 %li.delibver__right__content__group__name 電話
-                %li.delibver__tag.delibver__tag__arbitrary 任意
+                %li.delibver__tag.delibver__tag__require 必須
               %li= f.text_field :tell, class: 'delibver__right__input', placeholder: '例)09012345678'
               = f.submit '次へ進む', class: 'newuser__body__input__send'
   
