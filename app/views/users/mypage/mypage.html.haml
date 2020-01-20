@@ -19,7 +19,7 @@
             %h2 
             =@user.nickname
             .mypage__top__number 
-              ="評価 1 出品数 #{@user.items.count}"
+              ="評価 #{@user.eva(@user)} 出品数 #{@user.items.count}"
         /メインコンテンツ タブ選択(お知らせ/やることリスト)
         .mypage__select
           .mypage__select__tab

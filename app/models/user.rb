@@ -60,6 +60,15 @@ class User < ApplicationRecord
     self.likes.exists?(item_id: item.id)
   end
 
+  def eva(user)
+    num = 0
+    self.items.each do |item|
+      if item.evaluation.present?
+        num += 1
+      end
+    end
+    num
+  end
   has_one  :address
   has_one  :number
   has_many :cards
