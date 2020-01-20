@@ -1,7 +1,7 @@
 =render 'items/header'
 .search-container
   .sidebar
-    = form_for "@item" do |f|
+    = form_for "#" do |f|
       .sidebar-top
         = f.select :order, Item.orders.keys, {} 
         = icon('fas', 'angle-down', class: 'form-btn')
@@ -133,9 +133,9 @@
         .button
           -#クリア完了ボタン作成
           .button__delite
-            = f.submit 'クリア', class: 'delite-btn'
+            クリア
           .button__done
-            = f.submit '完了', class: 'done-btn'
+            完了
   .item-box-container
     - if @keyword.empty?
       .search-word
