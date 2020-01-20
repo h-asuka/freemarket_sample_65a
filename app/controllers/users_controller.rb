@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   def edit
     @number = @user.number
     @address = @user.address
-      render "users/edit/#{params[:name]}" 
+    render "users/edit/#{params[:name]}" 
   end
 
   # プロフィール更新

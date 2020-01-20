@@ -9,7 +9,7 @@
         = @item.name
       /画像説明
       %p.item-wording
-        ="『#{@item.name}』は、920回の取引実績を持つ#{@item.user.nickname}さんから出品されました。#{@item.genre}の商品で、#{@item.prefecture.name}から#{@item.delivery_day}で発送されます。"
+        ="『#{@item.name}』は、#{@user.eva(@user)}回の取引実績を持つ#{@item.user.nickname}さんから出品されました。#{@item.genre}の商品で、#{@item.prefecture.name}から#{@item.delivery_day}で発送されます。"
       /画像一覧
       .item-main-content 
         /画像一覧(ピックアップ)

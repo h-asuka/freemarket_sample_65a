@@ -174,7 +174,6 @@ class Item < ApplicationRecord
   },_prefix: true
 
   enum women:{
-    "---":100,
     トップス:0,
     'ジャケット/アウター':1,
     パンツ:2,
@@ -190,7 +189,6 @@ class Item < ApplicationRecord
     時計:12,
   },_prefix: true
   enum men:{
-    "---":100,
     トップス:13,
     'ジャケット/アウター':14,
     パンツ:15,
@@ -207,7 +205,6 @@ class Item < ApplicationRecord
     その他:26,
   },_prefix: true
   enum baby:{
-    "---":100,
     'ベビー服（女の子用）~95cm':27,
     'ベビー服（男の子用）~95cm':28,
     'ベビー服（男女兼用）~95cm':29,
@@ -224,7 +221,6 @@ class Item < ApplicationRecord
     '行事/記念品':40,
   },_prefix: true
   enum interior:{
-    "---":100,
     'キッチン/食器':41,
     'ベッド/マットレス':42,
     'ソファ/ソファベッド':43,
@@ -240,7 +236,6 @@ class Item < ApplicationRecord
     その他:53,
   },_prefix: true
   enum book:{
-    "---":100,
     本:54,
     漫画:55,
     雑誌:56,
@@ -250,7 +245,6 @@ class Item < ApplicationRecord
     テレビゲーム:60,
   },_prefix: true
   enum hobby:{
-    "---":100,
     おもちゃ:61,
     タレントグッズ:62,
     'コミック/アニメグッズ':63,
@@ -264,7 +258,6 @@ class Item < ApplicationRecord
     その他:71,
   },_prefix: true
   enum cosmetic:{
-    "---":100,
     ベースメイク:72,
     メイクアップ:73,
     ネイルケア:74,
@@ -278,7 +271,6 @@ class Item < ApplicationRecord
     その他:82,
   },_prefix: true
   enum appliance:{
-    "---":100,
     'スマートフォン/携帯':83,
     スマホアクセサリー:84,
     'PC/タブレット':85,
@@ -291,7 +283,6 @@ class Item < ApplicationRecord
     その他:92,
   },_prefix: true
   enum sports:{
-    "---":100,
     ゴルフ:93,
     フィッシング:94,
     自転車:95,
@@ -306,7 +297,6 @@ class Item < ApplicationRecord
     その他:104,
   },_prefix: true
   enum hand_made:{
-    "---":100,
     アクセサリー（女性用）:105,
     'ファション/小物':106,
     'アクセサリー/時計':107,
@@ -318,7 +308,6 @@ class Item < ApplicationRecord
     その他:113,
   },_prefix: true
   enum ticket:{
-    "---":100,
     音楽:114,
     スポーツ:115,
     '演技/芸能':116,
@@ -329,7 +318,6 @@ class Item < ApplicationRecord
     その他:121,
   },_prefix: true
   enum motorcycle:{
-    "---":100,
     自動車本体:122,
     '自動車タイヤ/ホイール':123,
     自動車パーツ:124,
@@ -339,7 +327,6 @@ class Item < ApplicationRecord
     オートバイアクセサリー:128,
   },_prefix: true
   enum other:{
-    "---":100,
     まとめ売り:129,
     ペット用品:130,
     食品:131,

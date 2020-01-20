@@ -19,7 +19,7 @@ class ItemTransactionsController < ApplicationController
   end
 
   def seller?
-    if @item.user_id == current_user.id
+    if @item.user_id != current_user.id
       flash[:alert] = "該当ユーザーではありません"
       redirect_to root_path
     end
