@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   before_action :set_user, except: [:new]
 
   before_action :Guard_clause, except: [:new, :show]
-  before_action :user_confirmation, only: [:update]
   before_action :set_number, only: [:tell_update]
   before_action :set_address, only: [:address_update]
   
